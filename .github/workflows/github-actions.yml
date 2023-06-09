@@ -24,4 +24,5 @@ jobs:
           - name: Cleanup
             if: always()
             run: |
+              eval `ssh-agent -s`
               ssh-add -D
