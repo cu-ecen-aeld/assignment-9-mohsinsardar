@@ -1,5 +1,9 @@
 
 config BR2_PACKAGE_LDD
 	bool "ldd"
+    depends on BR2_LINUX_KERNEL
 	help
-	  To add support for misc-modules and scull driver.
+	  Includes the writer executable, finder.sh and tester.sh in the kernel image.
+	  Used to understand buildroot external trees and package builds.
+comment "example needs a Linux kernel to be built."
+	depends on !BR2_LINUX_KERNEL

@@ -1,0 +1,4 @@
+config BR2_PACKAGE_AESDCHAR
+	bool "aesd-char"
+	help
+	  Includes the scull and misc-modules kernel modules
